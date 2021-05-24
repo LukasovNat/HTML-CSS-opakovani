@@ -1,1 +1,58 @@
 /*------------Tady piš svoje stylování --------------*/
+.social media {
+  width: 40%;
+}
+
+.photos {
+  overflow-x: auto;
+}
+.date {
+  position: relative;
+}
+.date__busy {
+  position: absolute;
+  top: 10px;
+}
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .social-media {
+    width: 30%;
+  }
+}
+@media (min-width: 576px) {
+  .card--md,
+  .card--sm {
+    width: 49%;
+  }
+}
+@media (min-width: 992px) {
+  .social-media {
+    width: 20%;
+  }
+}
+@media (min-width: 1200px) {
+  .social-media {
+    width: 15%;
+  }
+  .card--wide,
+  .card--md {
+    width: 32%;
+  }
+  .card--wide {
+    order: -1;
+  }
+}
+
+@media (max-width: 576px) {
+  .newsletter__image {
+    display: none;
+  }
+}
